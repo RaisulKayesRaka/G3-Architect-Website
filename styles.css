@@ -253,6 +253,61 @@ main {
     font-weight: 500;
 }
 
+.facts-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--Dark-01);
+    margin-bottom: 24px;
+}
+
+.facts-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Dark-03);
+    max-width: 542px;
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 24px;
+    padding: 100px 3.7%;
+}
+
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 241px;
+    height: 241px;
+}
+
+.fact-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.fact-card h3 {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--Dark-02);
+    margin-bottom: 5px;
+}
+
+.fact-card p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Dark-03);
+}
+
+/* media queries */
+
 @media (max-width: 1400px) {
     .quick-feature {
         flex-direction: column;
@@ -279,13 +334,17 @@ main {
         bottom: -67px;
         left: -82px;
     }
-    
+
     .float-text h1 {
         font-size: 55px;
     }
-    
+
     .float-text p {
         font-size: 20px;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -301,16 +360,17 @@ main {
     .features-image {
         width: 100%;
     }
+
     .float-text {
         padding: 35px 32px;
         bottom: -57px;
         left: -72px;
     }
-    
+
     .float-text h1 {
         font-size: 45px;
     }
-    
+
     .float-text p {
         font-size: 16px;
     }
@@ -338,11 +398,11 @@ main {
         bottom: -47px;
         left: -62px;
     }
-    
+
     .float-text h1 {
         font-size: 40px;
     }
-    
+
     .float-text p {
         font-size: 16px;
     }
@@ -358,13 +418,17 @@ main {
         bottom: -37px;
         left: -52px;
     }
-    
+
     .float-text h1 {
         font-size: 35px;
     }
-    
+
     .float-text p {
         font-size: 16px;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -381,11 +445,11 @@ main {
         bottom: -17px;
         left: -32px;
     }
-    
+
     .float-text h1 {
         font-size: 30px;
     }
-    
+
     .float-text p {
         font-size: 16px;
     }
