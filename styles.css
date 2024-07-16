@@ -306,6 +306,57 @@ main {
     color: var(--Dark-03);
 }
 
+.sponsors {
+    margin: 80px 0 130px;
+}
+
+.sponsors-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsors-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--Dark-01);
+    margin-bottom: 24px;
+}
+
+.sponsors-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--Dark-03);
+    max-width: 542px;
+    margin-bottom: 50px;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 24px;
+    filter: grayscale(100%);
+    flex-wrap: wrap;
+}
+
+footer {
+    margin: 0 12.5% 216px;
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 38px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242;
+}
+
 /* media queries */
 
 @media (max-width: 1400px) {
