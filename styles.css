@@ -341,6 +341,7 @@ main {
     gap: 24px;
     filter: grayscale(100%);
     flex-wrap: wrap;
+    width: 100%;
 }
 
 footer {
@@ -484,11 +485,23 @@ footer p {
 }
 
 @media (max-width: 576px) {
+    header nav h1 {
+        font-size: 34px;
+    }
+
     .header-section-text h1 {
         color: var(--Dark-01);
         font-size: 48px;
         font-weight: 700;
         margin-bottom: 25px;
+    }
+
+    .quick-feature-text h1 {
+        font-size: 34px;
+    }
+
+    .features-text h1 {
+        font-size: 34px;
     }
 
     .float-text {
@@ -503,5 +516,17 @@ footer p {
 
     .float-text p {
         font-size: 16px;
+    }
+
+    .facts-text h1 {
+        font-size: 34px;
+    }
+
+    .sponsors-text h1 {
+        font-size: 34px;
+    }
+
+    .sponsors-logo{
+        justify-content: center;
     }
 }
