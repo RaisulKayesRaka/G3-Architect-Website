@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    --Dark-01: #131313;
+    --Dark-02: #424242;
+    --Dark-03: #727272;
+}
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 0 45px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 102px;
+    margin: 0 12.5%;
+}
+
+header nav h1 {
+    color: var(--Dark-01);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--Dark-02);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header section {
+    margin: 0 12.5%;
+    text-align: center;
+}
+
+.header-section-text {
+    max-width: 862px;
+    margin: 0 auto;
+}
+
+.header-section-text h1{
+    color: var(--Dark-01);
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.header-section-text p{
+    color: var(--Dark-03);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+header section a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    background: #FF900E;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+header section img{
+    width: 100%;
+    border-radius: 8px;
+}
