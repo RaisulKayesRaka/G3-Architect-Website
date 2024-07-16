@@ -37,6 +37,9 @@ header nav h1 {
 
 header nav ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: nowrap;
     gap: 40px;
     list-style: none;
 }
@@ -47,6 +50,10 @@ header nav ul li a {
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
+}
+
+header nav ul li a:hover {
+    color: var(--Dark-01);
 }
 
 header section {
@@ -81,7 +88,7 @@ header section a {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 25px;
-    background: #FF900E;
+    background: #ff900e;
     border-radius: 8px;
     margin-bottom: 50px;
     cursor: pointer;
@@ -138,7 +145,7 @@ main {
 }
 
 .span-Features {
-    color: #FF900E;
+    color: #ff900e;
 }
 
 .quick-feature-text p {
@@ -156,7 +163,49 @@ main {
     font-size: 20px;
     font-weight: 600;
     padding: 20px 25px;
-    background: #FF900E;
+    background: #ff900e;
     border-radius: 8px;
     cursor: pointer;
 }
+
+@media (max-width: 1400px) {
+    .quick-feature {
+        flex-direction: column;
+    }
+
+    .quick-feature-image {
+        width: 100%;
+    }
+
+    .quick-feature-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav h1 {
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    .quick-feature-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .quick-feature {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 576px) {}
